@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="sortingCanvas" width="1800" height="800"></canvas>
+    <div class="buttons">
+        <button id="mergeSortButton">Merge Sort</button>
+        <button id="quickSortButton">Quick Sort</button>
+        <button id="heapSortButton">Heap Sort</button>
+        <button id="selectionSortButton">Selection Sort</button>
+        <button id="doubleSelectionSortButton">Double Selection Sort</button>
+        <button id="americanFlagSort">American Flag Sort</button>
+        <button id="bogoSortButton">Bogosort Sort</button>
+    </div>
+    <div id="notification" class="notification">Sorting is already in progress!</div>
+    <div class="settings">
+        <label for="barWidthInput">Bar Width:</label>
+        <input type="number" id="barWidthInput" min="1" max="20" value="5">
+        <button id="applySettingsButton">Apply</button>
+        <button id="shuffleButton">Shuffle</button>
+    </div>
+    <script src="sorting.js"></script>
+</body>
+</html>

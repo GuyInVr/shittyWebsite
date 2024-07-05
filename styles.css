@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    border: 1px solid #747474;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5e5e5e;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #858585;
+}
+
+#applySettingsButton {
+    background-color: #5e5e5e;
+    color: #ffffff;
+    padding: 4px 7px;
+    font-size: 12px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+#applySettingsButton:hover {
+    background-color: #858585;
+}
+
+#shuffleButton {
+    background-color: #5e5e5e;
+    color: #ffffff;
+    padding: 4px 7px;
+    font-size: 12px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+#shuffleButton:hover {
+    background-color: #858585;
+}
+
+.notification {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.notification.show {
+    top: 10px;
+    opacity: 1;
+}
