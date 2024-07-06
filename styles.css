@@ -1,4 +1,7 @@
 body {
+    background-color: rgb(19, 21, 22);
+    color: rgb(205, 200, 194);
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,6 +9,7 @@ body {
 }
 
 canvas {
+    background-color: rgb(24,27,26);
     border: 1px solid #747474;
     margin-bottom: 20px;
 }
@@ -20,19 +24,24 @@ button {
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color: #5e5e5e;
-    color: white;
+    background-color: rgb(37, 40, 41);
+    color: rgb(197, 192, 184);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #858585;
+    background-color: rgb(28, 31, 31);
+}
+
+#sortingCanvas{
+    background-color: rgb(24,27,26);
+    border-color: rgb(112, 104, 92);
 }
 
 #applySettingsButton {
-    background-color: #5e5e5e;
-    color: #ffffff;
+    background-color: rgb(37, 40, 41);
+    color: rgb(197, 192, 184);
     padding: 4px 7px;
     font-size: 12px;
     border-radius: 7px;
@@ -40,12 +49,12 @@ button:hover {
 }
 
 #applySettingsButton:hover {
-    background-color: #858585;
+    background-color: rgb(28, 31, 31);
 }
 
 #shuffleButton {
-    background-color: #5e5e5e;
-    color: #ffffff;
+    background-color: rgb(37, 40, 41);
+    color: rgb(197, 192, 184);
     padding: 4px 7px;
     font-size: 12px;
     border-radius: 7px;
@@ -53,7 +62,13 @@ button:hover {
 }
 
 #shuffleButton:hover {
-    background-color: #858585;
+    background-color: rgb(28, 31, 31);
+}
+
+input[type="number"] {
+    background-color: rgb(37, 40, 41);
+    color: rgb(197, 192, 184);
+    border: 1px solid #555;
 }
 
 .notification {
